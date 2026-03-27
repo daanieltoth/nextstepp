@@ -54,6 +54,7 @@ const TRANSLATIONS = {
     svc1_li4: 'Landing page & konverzió-optimalizálás',
     svc1_li5: 'SEO & tartalom stratégia',
     svc1_li6: 'Közösségi média jelenlét',
+    svc1_li7: 'Hang Design',
 
     svc2_title_html: 'Automatizáció &amp;<br>Folyamat-fejlesztés',
     svc2_desc:       'Csökkentjük az ismétlődő munkát, növeljük a hatékonyságot. Automatizáció = befektetés a jövőbe.',
@@ -63,7 +64,6 @@ const TRANSLATIONS = {
     svc2_li4: 'Adatelemzés & riportálás',
     svc2_li5: 'API integrációk',
     svc2_li6: 'Egyedi belső eszközök fejlesztése',
-    svc2_li7: 'Hang Design',
 
     // ABOUT
     about_h2_html: 'Nem korporáció.<br><em>Egy kis csapat.</em>',
@@ -155,7 +155,7 @@ const TRANSLATIONS = {
     svc1_li4: 'Landing page & conversion optimization',
     svc1_li5: 'SEO & content strategy',
     svc1_li6: 'Social media presence',
-    svc2_li7: 'Sound Design',
+    svc1_li7: 'Sound Design',
 
     svc2_title_html: 'Automation &amp;<br>Process Development',
     svc2_desc:       'We reduce repetitive work and increase efficiency. Automation = an investment in the future.',
