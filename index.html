@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DantechLabs</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;700&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="#" class="logo">NEXTSTEP<sup>PROJECT</sup></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#projektek" data-i18n="nav_projektek">Projektek</a></li>
+    <li><a href="#szolgaltatasok" data-i18n="nav_szolgaltatasok">Szolgáltatások</a></li>
+    <li><a href="#rolunk" data-i18n="nav_rolunk">Rólunk</a></li>
+    <li><a href="#kapcsolat" data-i18n="nav_kapcsolat">Kapcsolat</a></li>
+  </ul>
+  <!-- lang toggle + hamburger injected by i18n.js -->
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="hero">
+  <div class="hero-left reveal">
+    <div>
+      <div class="hero-eyebrow" data-i18n="hero_eyebrow">Tech stúdió — Budapest</div>
+      <h1 class="hero-h1">
+        <span data-i18n="hero_h1_span1">Ahol az</span>
+        <em data-i18n="hero_h1_em">ötletek</em>
+        <span class="outlined" data-i18n="hero_h1_span2">életre kelnek.</span>
+      </h1>
+    </div>
+    <div class="hero-bottom">
+      <p class="hero-desc" data-i18n="hero_desc">Kis csapat, nagy álmok. Marketing, webfejlesztés, mobilapp és automatizáció — egy fedél alatt, szívvel-lélekkel.</p>
+      <div class="hero-cta-group">
+        <a href="#projektek" class="btn-block filled" data-i18n="hero_btn1">Projektjeink →</a>
+        <a href="#kapcsolat" class="btn-block" data-i18n="hero_btn2">Dolgozzunk együtt</a>
+      </div>
+    </div>
+    <div class="hero-stamp" data-i18n="hero_stamp">EST. 2024 — BUDAPEST</div>
+  </div>
+  <div class="hero-right">
+    <div class="steps-label" data-i18n="steps_label">Hogyan működik</div>
+    <div class="steps-list">
+      <div class="step-item">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <div class="step-title" data-i18n-html="step1_title_html">Elküldöd<br><em>a kérésed</em></div>
+          <p class="step-desc" data-i18n="step1_desc">Írd le, mi jár a fejedben — akár egy mondat is elég. Nincs sablon, nincs formanyomtatvány.</p>
+          <span class="step-arrow" data-i18n="step1_arrow">→ hello@dantechlabs.hu</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <div class="step-title" data-i18n-html="step2_title_html">Mi<br><em>válaszolunk</em></div>
+          <p class="step-desc" data-i18n="step2_desc">24 órán belül visszajelzünk. Ha nem tudod pontosan mit akarsz — semmi gond, felmérjük és adunk egy ingyenes visszajelzést.</p>
+          <span class="step-arrow" data-i18n="step2_arrow">→ 24h-n belül</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <div class="step-title" data-i18n-html="step3_title_html">Megyünk<br><em>tovább</em></div>
+          <p class="step-desc" data-i18n="step3_desc">Ha minden egyezik, elkezdünk dolgozni. Lépésről lépésre, együtt — amíg el nem jutunk oda, ahova szeretnél.</p>
+          <span class="step-arrow" data-i18n="step3_arrow">→ kezdjük el</span>
+        </div>
+      </div>
+    </div>
+    <div class="steps-cta">
+      <a href="#kapcsolat" data-i18n="steps_cta">Küldd el a kérésed most →</a>
+    </div>
+  </div>
+</section>
+
+<div class="ed-divider" data-i18n="div_projektek">Projektek &amp; munkáink</div>
+
+<section id="projektek">
+  <div class="proj-header">
+    <div class="proj-num">01</div>
+    <div class="proj-title-wrap reveal">
+      <h2 data-i18n="proj_heading">Amiket eddig csináltunk</h2>
+      <p data-i18n="proj_sub">Kattints bármelyik polaroidra — megtudod, mi van mögötte.</p>
+    </div>
+  </div>
+  <div class="board-wrap reveal">
+    <div class="polaroids-row" id="polaroids-row"></div>
+  </div>
+</section>
+
+<div class="ed-divider" data-i18n="div_szolgaltatasok">Szolgáltatások</div>
+
+<section id="szolgaltatasok">
+  <div class="svc-grid">
+    <div class="svc-card reveal">
+      <div class="svc-big-num">01</div>
+      <span class="svc-icon-big">📣</span>
+      <h3 data-i18n-html="svc1_title_html">Marketing &amp;<br>Digitális jelenlét</h3>
+      <p data-i18n="svc1_desc">Láthatóvá teszünk. Weboldaltól mobilappig mindent lefedünk, hogy a márkád eljusson a közönségéhez.</p>
+      <ul class="svc-list">
+        <li data-i18n="svc1_li1">Egyedi weboldal fejlesztés</li>
+        <li data-i18n="svc1_li2">iOS &amp; Android mobilalkalmazás</li>
+        <li data-i18n="svc1_li3">Vizuális márkaépítés &amp; arculat</li>
+        <li data-i18n="svc1_li4">Landing page &amp; konverzió-optimalizálás</li>
+        <li data-i18n="svc1_li5">SEO &amp; tartalom stratégia</li>
+        <li data-i18n="svc1_li6">Közösségi média jelenlét</li>
+      </ul>
+    </div>
+    <div class="svc-card reveal">
+      <div class="svc-big-num">02</div>
+      <span class="svc-icon-big">⚡</span>
+      <h3 data-i18n-html="svc2_title_html">Automatizáció &amp;<br>Folyamat-fejlesztés</h3>
+      <p data-i18n="svc2_desc">Csökkentjük az ismétlődő munkát, növeljük a hatékonyságot. Automatizáció = befektetés a jövőbe.</p>
+      <ul class="svc-list">
+        <li data-i18n="svc2_li1">Üzleti folyamat-automatizálás</li>
+        <li data-i18n="svc2_li2">CRM integráció &amp; beállítás</li>
+        <li data-i18n="svc2_li3">Email &amp; értesítési workflow-k</li>
+        <li data-i18n="svc2_li4">Adatelemzés &amp; riportálás</li>
+        <li data-i18n="svc2_li5">API integrációk</li>
+        <li data-i18n="svc2_li6">Egyedi belső eszközök fejlesztése</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="ed-divider" data-i18n="div_csapat">A csapat</div>
+
+<section id="rolunk">
+  <div class="about-inner">
+    <div class="about-left reveal">
+      <h2 data-i18n-html="about_h2_html">Nem korporáció.<br><em>Egy kis csapat.</em></h2>
+      <p data-i18n="about_p">A Next Step Projekt mögött szenvedélyes emberek állnak, akik szeretik, amit csinálnak. Nem dobozos megoldásokban gondolkodunk — minden ügyféllel együtt alakítunk ki valamit, ami valóban működik.</p>
+      <div class="values">
+        <div class="val">
+          <span class="val-num">01</span>
+          <div>
+            <h4 data-i18n="val1_title">Személyes kapcsolat</h4>
+            <p data-i18n="val1_desc">Nem vagy egy ticket-szám. Minden projektet úgy kezelünk, mintha a miénk lenne.</p>
+          </div>
+        </div>
+        <div class="val">
+          <span class="val-num">02</span>
+          <div>
+            <h4 data-i18n="val2_title">100% szenvedély</h4>
+            <p data-i18n="val2_desc">Ha vállalunk valamit, mindent beleadunk. Nincs félmunka.</p>
+          </div>
+        </div>
+        <div class="val">
+          <span class="val-num">03</span>
+          <div>
+            <h4 data-i18n="val3_title">Hosszú táv</h4>
+            <p data-i18n="val3_desc">Nem az egyszeri megrendelés érdekel, hanem a tartós együttműködés.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-right reveal">
+      <div class="team-photo" aria-label="Next Step csapat kép">
+        <img src="./OIF.jpg" alt="Next Step Projekt">
+      </div>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num">6+</span><span class="stat-label" data-i18n="stat_projekt">Projekt</span></div>
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label" data-i18n="stat_tag">Tag</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ed-divider" data-i18n="div_kapcsolat">Kapcsolat</div>
+
+<section id="kapcsolat">
+  <div class="contact-grid">
+    <div class="contact-left reveal">
+      <h2 data-i18n-html="contact_h2_html">Van egy<br><em>ötleted?</em></h2>
+      <p data-i18n="contact_p">Mesélj róla. Nem harapunk — és általában 24 órán belül visszajelzünk.</p>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="field">
+          <label data-i18n="form_label_name">Neved</label>
+          <input type="text" data-i18n-placeholder="form_placeholder_name" placeholder="Kovács Bence" required>
+        </div>
+        <div class="field">
+          <label data-i18n="form_label_email">Email</label>
+          <input type="email" data-i18n-placeholder="form_placeholder_email" placeholder="bence@email.hu" required>
+        </div>
+        <div class="field">
+          <label data-i18n="form_label_tema">Téma</label>
+          <select>
+            <option value="" data-i18n="form_opt_choose">Válassz...</option>
+            <option data-i18n="form_opt1">Weboldal fejlesztés</option>
+            <option data-i18n="form_opt2">Mobilalkalmazás</option>
+            <option data-i18n="form_opt3">Marketing &amp; arculat</option>
+            <option data-i18n="form_opt4">Automatizáció</option>
+            <option data-i18n="form_opt5">Egyéb</option>
+          </select>
+        </div>
+        <div class="field">
+          <label data-i18n="form_label_msg">Üzeneted</label>
+          <textarea rows="4" data-i18n-placeholder="form_placeholder_msg" placeholder="Meséld el az ötleted..."></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="submitBtn" data-i18n="form_submit">Küldés →</button>
+      </form>
+    </div>
+    <div class="contact-right reveal">
+      <div class="contact-deco" data-i18n="contact_deco">SZIA</div>
+      <div class="contact-row"><span class="cr-label" data-i18n="cr_email">Email</span><span class="cr-val"><a href="mailto:hello@dantechlabs.hu">hello@dantechlabs.hu</a></span></div>
+      <div class="contact-row"><span class="cr-label" data-i18n="cr_instagram">Instagram</span><span class="cr-val">@dantechlabs</span></div>
+      <div class="contact-row"><span class="cr-label" data-i18n="cr_elerhetoseg">Elérhetőség</span><span class="cr-val" data-i18n="cr_hours">H–P, 09:00–18:00</span></div>
+      <div class="contact-row"><span class="cr-label" data-i18n="cr_helyszin">Helyszín</span><span class="cr-val">Budapest, HU</span></div>
+      <div class="contact-row"><span class="cr-label" data-i18n="cr_meeting">Meeting</span><span class="cr-val" data-i18n="cr_meeting_val">Kávézó, mindig OK ☕</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="#" class="logo">Next Step Projekt</a>
+  <p data-i18n="footer_copy">© 2025 — Szeretettel készítve, Budapest</p>
+</footer>
+
+<div id="modal-container"></div>
+
+<script>
+// ─── PROJEKT ADATOK ────────────────────────────────────────────────────────────
+let PROJECTS = [];
+async function loadProjects() {
+  try {
+    const res = await fetch('projects.json');
+    PROJECTS = await res.json();
+    buildPolaroids();
+    buildModals();
+  } catch (err) {
+    console.error('Hiba a projektek betöltésekor:', err);
+  }
+}
+
+// ─── LINK IKONOK (SVG) ─────────────────────────────────────────────────────────
+const LINK_ICONS = {
+  instagram: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>`,
+  tiktok:    `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.95a8.16 8.16 0 0 0 4.78 1.52V7.02a4.85 4.85 0 0 1-1.01-.33z"/></svg>`,
+  weboldal:  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`
+};
+
+function getLinkIcon(name) {
+  const n = name.toLowerCase();
+  if (n.includes('instagram')) return LINK_ICONS.instagram;
+  if (n.includes('tiktok'))    return LINK_ICONS.tiktok;
+  return LINK_ICONS.weboldal;
+}
+function getLinkLabel(name) {
+  const n = name.toLowerCase();
+  if (n.includes('instagram')) return 'Instagram';
+  if (n.includes('tiktok'))    return 'TikTok';
+  return 'Weboldal';
+}
+
+// ─── POLAROID GENERÁLÁS ────────────────────────────────────────────────────────
+const ROTATIONS  = [-4, 3, -6, 5, -3, 4, -2, 6, -5, 2];
+const STATUS_CLS = { done: 'done', active: 'concept', beta: 'concept', wip: 'concept' };
+
+function buildPolaroids() {
+  const row = document.getElementById('polaroids-row');
+  if (!row) return;
+  row.innerHTML = PROJECTS.map((p, i) => {
+    const rot = ROTATIONS[i % ROTATIONS.length];
+    const stCls = STATUS_CLS[p.status] || '';
+    const imgHtml = p.logo
+      ? `<img src="${p.logo}" alt="${p.title}" style="width:100%;height:100%;object-fit:cover;object-position:center;">`
+      : p.emoji;
+    return `
+      <a class="polaroid" href="#" style="transform:rotate(${rot}deg)" onclick="openModal('${p.id}'); return false;">
+        <div class="pol-tape"></div>
+        <div class="pol-img">${imgHtml}</div>
+        <span class="pol-status ${stCls}"></span>
+        <div class="pol-caption">${p.title}</div>
+      </a>`;
+  }).join('');
+}
+
+// ─── MODAL GENERÁLÁS ───────────────────────────────────────────────────────────
+function buildModals() {
+  const container = document.getElementById('modal-container');
+  if (!container) return;
+  container.innerHTML = PROJECTS.map(p => {
+    const paragraphs = p.description.split('\n\n').map(t => `<p>${t}</p>`).join('');
+    const tags       = p.technologies.map(t => `<span class="modal-tag">${t}</span>`).join('');
+    const logoHtml   = p.logo
+      ? `<img src="${p.logo}" alt="${p.title} logo" class="modal-logo-img">`
+      : `<span class="modal-emoji-inner">${p.emoji}</span>`;
+    const links = (p.links && p.links.length)
+      ? `<div class="modal-links">${p.links.map(l => `
+            <a href="${l.url}" target="_blank" rel="noopener" class="modal-link" title="${getLinkLabel(l.name)}">
+              <span class="modal-link-icon">${getLinkIcon(l.name)}</span>
+              <span class="modal-link-label">${getLinkLabel(l.name)}</span>
+            </a>`).join('')}</div>`
+      : '';
+    return `
+      <div id="m-${p.id}" class="proj-modal" onclick="closeIfBack(event,'${p.id}')">
+        <div class="modal-inner">
+          <div class="modal-top">
+            <div class="modal-emoji-box">${logoHtml}</div>
+            <div class="modal-title-box">
+              <h2>${p.title}</h2>
+              <span class="modal-status">${p.statusLabel}</span>
+            </div>
+            <button class="modal-close" onclick="closeModal('${p.id}')">✕</button>
+          </div>
+          <div class="modal-body">
+            ${paragraphs}
+            <div class="modal-tags">${tags}</div>
+            ${links}
+          </div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+// ─── MODAL MŰVELETEK ───────────────────────────────────────────────────────────
+function openModal(id) {
+  const el = document.getElementById('m-' + id);
+  if (el) { el.classList.add('open'); document.body.style.overflow = 'hidden'; }
+}
+function closeModal(id) {
+  const el = document.getElementById('m-' + id);
+  if (el) { el.classList.remove('open'); document.body.style.overflow = ''; }
+}
+function closeIfBack(e, id) {
+  if (e.target === e.currentTarget) closeModal(id);
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.proj-modal.open').forEach(m => m.classList.remove('open'));
+    document.body.style.overflow = '';
+  }
+});
+
+// ─── FORM ─────────────────────────────────────────────────────────────────────
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  // Use translated "sent" text if available
+  const sentText = (typeof TRANSLATIONS !== 'undefined' && typeof currentLang !== 'undefined')
+    ? TRANSLATIONS[currentLang].form_sent
+    : 'Elküldve ✓';
+  btn.textContent = sentText;
+  btn.disabled = true;
+  setTimeout(() => {
+    const submitText = (typeof TRANSLATIONS !== 'undefined' && typeof currentLang !== 'undefined')
+      ? TRANSLATIONS[currentLang].form_submit
+      : 'Küldés →';
+    btn.textContent = submitText;
+    btn.disabled = false;
+    e.target.reset();
+  }, 3000);
+}
+
+// ─── NAV + HEADER OFFSET ──────────────────────────────────────────────────────
+function setHeaderOffset() {
+  const nav = document.querySelector('nav');
+  document.documentElement.style.setProperty('--header-offset', (nav ? nav.offsetHeight : 0) + 'px');
+}
+setHeaderOffset();
+window.addEventListener('resize', setHeaderOffset);
+
+const ham   = document.getElementById('hamburger');
+const navEl = document.getElementById('navLinks');
+ham.addEventListener('click', () => navEl.classList.toggle('mob'));
+navEl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navEl.classList.remove('mob')));
+
+// ─── SCROLL REVEAL ────────────────────────────────────────────────────────────
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(en => {
+    if (en.isIntersecting) { en.target.classList.add('visible'); obs.unobserve(en.target); }
+  });
+}, { threshold: 0.1 });
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+loadProjects();
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+<!-- 🌐 Automatikus nyelvfelismerés + toggle -->
+<script src="i18n.js"></script>
+
+</body>
+</html>

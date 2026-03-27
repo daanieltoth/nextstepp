@@ -1,0 +1,85 @@
+[
+  {
+    "id": "astoria",
+    "title": "Astoria Gold",
+    "emoji": "🦄",
+    "logo": "OIF.jpg",
+    "status": "done",
+    "statusLabel": "○ Befejezett",
+    "description": "A Budapesten található Astoria Gold ékszerüzletnek készítettünk weboldalat, egy 3d-s karkötő készítővel és egy online üzleti rendszerrel.",
+    "technologies": ["Shopify", "React", "Stripe", "Three Js"],
+    "links": [
+      { "name": "Weboldal", "url": "https://astoriaekszer.com" },
+      { "name": "Instagram", "url": "https://www.instagram.com/astoriagoldjewellery/" }
+    ]
+  },
+  {
+    "id": "lore",
+    "title": "Lore",
+    "emoji": "🌊",
+    "logo": "",
+    "status": "wip",
+    "statusLabel": "◌ Fejlesztés alatt",
+    "description": "Lore egy mobil alkalmazás, ahol létrehozol notebookokat bármilyen témához — trading, fitness, biológia vizsga, bármi — majd megoszthatsz bármilyen TikTok, Instagram, YouTube vagy X videót, és az app automatikusan kibontja belőle a kulcsfogalmakat és beépíti a notebookodba. Minden új videóval a notebook okosabb lesz: a fogalmak összekapcsolódnak, a kapcsolódó koncepciók egymásra épülnek, és látod, hogy mi az amit már értesz és mi az amit még meg kell tanulnod. A cél az, hogy a passzív scrollozásból aktív tanulás legyen — ahelyett hogy elfelejted amit néztél, egy strukturált tudásbázist építesz ami tényleg megmarad.",
+    "technologies": ["Flutter", "IOS/Android", "AI"],
+    "links": [
+      { "name": "Instagram", "url": "https://www.instagram.com/getloreapp/" },
+      { "name": "Weboldal", "url": "https://getloreapp.vercel.app/" }
+    ]
+  },
+  {
+    "id": "autobot",
+    "title": "AutoBot",
+    "emoji": "🤖",
+    "logo": "",
+    "status": "beta",
+    "statusLabel": "◌ Beta tesztelés",
+    "description": "Intelligens ügyfélszolgálati chatbot kis webshopok számára. Automatikusan kezeli a leggyakoribb kérdéseket és csökkenti az ügyfélszolgálat terhelését.\n\nJelenleg 3 beta-ügyféllel fut éles tesztelés alatt.",
+    "technologies": ["Chatbot", "AI", "Automatizáció", "API"],
+    "links": [
+      { "name": "Instagram", "url": "https://instagram.com/dantechlabs" },
+      { "name": "TikTok", "url": "https://tiktok.com/@dantechlabs" }
+    ]
+  },
+  {
+    "id": "pocket",
+    "title": "PocketApp",
+    "emoji": "📱",
+    "logo": "",
+    "status": "wip",
+    "statusLabel": "◌ Fejlesztés alatt",
+    "description": "iOS és Android mobilalkalmazás egy helyi szolgáltató vállalkozásnak. Időpontfoglalás, push értesítések és ügyfélkezelés egy helyen.\n\nTervezett megjelenés: 2025 Q2.",
+    "technologies": ["React Native", "iOS", "Android"],
+    "links": [
+      { "name": "TikTok", "url": "https://tiktok.com/@dantechlabs" }
+    ]
+  },
+  {
+    "id": "brand",
+    "title": "BrandKit",
+    "emoji": "🎨",
+    "logo": "",
+    "status": "done",
+    "statusLabel": "○ Befejezett",
+    "description": "Teljes vizuális arculatcsomag egy startupnak: logo, színpaletta, tipográfia, közösségi média sablonok és brand guideline.\n\nAz ügyfél azóta sikeresen lezárta az első finanszírozási kört.",
+    "technologies": ["Branding", "Logo", "Brand guide"],
+    "links": [
+      { "name": "Instagram", "url": "https://instagram.com/dantechlabs" },
+      { "name": "Weboldal", "url": "https://example.com" }
+    ]
+  },
+  {
+    "id": "dash",
+    "title": "DataDash",
+    "emoji": "📊",
+    "logo": "",
+    "status": "wip",
+    "statusLabel": "◌ Fejlesztés alatt",
+    "description": "Belső dashboard eszköz egy e-kereskedelmi ügyfélnek. Valós idejű értékesítési adatok, KPI-ok és automatikus heti riportok egy felületen.\n\nAz első prototípus elkészült, finomhangolás zajlik.",
+    "technologies": ["Dashboard", "Data viz", "Automatizáció"],
+    "links": [
+      { "name": "Weboldal", "url": "https://example.com" },
+      { "name": "TikTok", "url": "https://tiktok.com/@dantechlabs" }
+    ]
+  }
+]
