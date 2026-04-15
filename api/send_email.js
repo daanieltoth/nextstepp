@@ -6,8 +6,8 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 async function sendEmail({ name, email, message }) {
     return await resend.emails.send({
         from: "onboarding@resend.dev", // replace with your domain later
-        to: "your@email.com",
-        subject: `New message from ${name}`,
+        to: "dtlabskapcsolat@gmail.com",
+        subject: `A Next Step Inquiry from ${name}`,
         html: `
       <h2>New Contact Form Message</h2>
       <p><strong>Name:</strong> ${name}</p>

@@ -55,20 +55,6 @@
     ]
   },
   {
-    "id": "brand",
-    "title": "BrandKit",
-    "emoji": "🎨",
-    "logo": "",
-    "status": "done",
-    "statusLabel": "○ Befejezett",
-    "description": "Teljes vizuális arculatcsomag egy startupnak: logo, színpaletta, tipográfia, közösségi média sablonok és brand guideline.\n\nAz ügyfél azóta sikeresen lezárta az első finanszírozási kört.",
-    "technologies": ["Branding", "Logo", "Brand guide"],
-    "links": [
-      { "name": "Instagram", "url": "https://instagram.com/dantechlabs" },
-      { "name": "Weboldal", "url": "https://example.com" }
-    ]
-  },
-  {
     "id": "dash",
     "title": "DataDash",
     "emoji": "📊",
